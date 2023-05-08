@@ -1,21 +1,30 @@
 
 const navbar = () =>{
+    const styles={
+      "blur_navbar":{
+        "backgroundColor": "rgba(0, 0, 0, 0.5)",
+        "backdropFilter": "blur(10px)",
+        "color": "#fff"
+
+      }
+    }
+
     return (
-        <nav className="navbar navbar-expand-lg navbar-dark bg-dark sticky-top">
+        <nav className="navbar navbar-expand-lg  fixed-top" style={styles.blur_navbar}>
           <div className="container-fluid">
-            <a className="navbar-brand" href="#">
-              Portafolio
+            <a className="navbar-brand text-white" href="#">
+              Leonardo Ramirez
             </a>
             <div className="collapse navbar-collapse" id="navbarResponsive">
               <ul className="navbar-nav ms-auto">
-                <li className="nav-item">
-                  <a className="nav-link" href="#skills">
-                    Skills
+                <li className="nav-item ">
+                  <a className="nav-link text-white" href="#yo">
+                    Sobre mi
                   </a>
                 </li>
                 <li className="nav-item">
-                  <a className="nav-link" href="#">
-                    About
+                  <a className="nav-link text-white" href="#skills">
+                    Skills
                   </a>
                 </li>
                 </ul>
